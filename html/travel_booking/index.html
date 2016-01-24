@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Page Needs -->
+	<meta charset="utf-8" />
+    <title>The Travel Booking</title>
+    <meta name="description" content="The Travel Booking" />
+    <meta name="author" content="Umit Karaosmanoglu" />
+
+	<!-- Mobile Specific Metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />	
+	
+	<!-- styles -->
+    <link href="assets/styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/styles/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="assets/styles/layout.css" rel="stylesheet" />
+    <link href="assets/styles/responsive.css" rel="stylesheet" />
+    <link href="assets/styles/user_change.css" rel="stylesheet" />
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]> <script src="assets/scripts/html5.js"></script> <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/apple-touch-icon-114-precomposed.png" />
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/apple-touch-icon-72-precomposed.png" />
+                    <link rel="apple-touch-icon-precomposed" href="assets/images/apple-touch-icon-57-precomposed.png" />
+                                   <link rel="shortcut icon" href="assets/images/favicon.png" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+
+	<!-- HEADER ================================================== -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="dropdownMenus clearfix">
+						<div class="dropdown language">
+						  <a class="dropTrigger" id="dLabelLang" data-toggle="dropdown" href="#"><img alt="language-en" src="assets/images/language-en.png" /><span>EN</span></a>
+						  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabelLang">
+							<li><a class="clearfix" href="#" title="EN"><img alt="language-en" src="assets/images/language-en.png" /><span>EN</span></a></li>
+							<li><a class="clearfix" href="#" title="CH"><img alt="language-ch" src="assets/images/language-ch.png" /><span>CH</span></a></li>
+							<li><a class="clearfix" href="#" title="RU"><img alt="language-ru" src="assets/images/language-ru.png" /><span>RU</span></a></li>
+							<li><a class="clearfix" href="#" title="JP"><img alt="language-jp" src="assets/images/language-jp.png" /><span>JP</span></a></li>
+						  </ul>
+						</div><!-- /language -->
+						<div class="dropdown currency">
+						  <a class="dropTrigger" id="dLabelCur" data-toggle="dropdown" href="#">US</a>
+						  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabelCur">
+							<li><a class="clearfix" href="#" title="US">US</a></li>
+							<li><a class="clearfix" href="#" title="EUR">EUR</a></li>
+							<li><a class="clearfix" href="#" title="STERLIN">STERLIN</a></li>
+							<li><a class="clearfix" href="#" title="YEN">YEN</a></li>
+						  </ul>
+						</div><!-- /currency -->
+					</div><!-- /clearfix -->
+					<div class="callUsTop">
+						<h4>CALL US TODAY</h4>
+						<span>Lorem ipsum dolor sit saelas: <a href="tel:84868868888" title="(84) - 868 868 888">(84) - 868 868 888</a></span>
+					</div><!-- /callUsTop -->
+				</div><!-- /col -->
+				
+				<div class="col-sm-8">
+					<div class="col-sm-8">
+						<div id="logo"><a href="#" title="Travel Booking"><img src="assets/images/logo.png" alt="Travel Booking" /></a></div>
+						<div class="topmenu clearfix">
+							<ul>
+								<li><a href="#" title="About Us">About Us</a></li>
+								<li><a href="#" title="News">News</a></li>
+								<li><a href="#" title="Service">Service</a></li>
+								<li><a href="#" title="Recruiment">Recruiment</a></li>
+								<li><a href="#" title="Media">Media</a></li>
+								<li><a href="#" title="Support">Support</a></li>
+							</ul>
+						</div><!-- /topmenu -->
+					</div><!-- /col -->
+					<div class="col-sm-4 clearfix">
+						<div class="fRight pRev">
+							<div class="topRightLinks clearfix">
+								<a class="login" href="#">Login</a>
+								<a class="register" href="#">Register</a>
+							</div>
+							<div class="social clearfix">
+								<ul>
+									<li><a class="rss" href="#">RSS</a></li>
+									<li><a class="twitter" href="#">Twitter</a></li>
+									<li><a class="facebook" href="#">Facebook</a></li>
+								</ul>
+							</div><!-- /topSocial -->
+							<form id="topSearch" class="clearfix" action="#" method="post" />
+								<input type="text" name="keyword" />
+								<input type="submit" name="submit" />
+							</form><!-- /topSearch -->
+						</div><!-- /fRight -->
+					</div><!-- /col -->
+				</div><!-- /col -->
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</header><!-- /header -->
+	
+	
+	<!-- MAIN MENU ================================================== -->
+	<div class="mainMenuContainer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="mainMenu clearfix">
+						<em class="mobDropdown"></em>
+						<ul>
+							<li class="active"><a href="#" title="Home">Home</a></li>
+							<li><a href="#" title="Hotels">Hotels</a></li>
+							<li><a href="#" title="Holidays">Holidays</a></li>
+							<li><a href="#" title="Flights">Flights</a></li>
+							<li><a href="#" title="Cars">Cars</a></li>
+							<li><a href="#" title="Vacations">Vacations</a></li>
+							<li><a href="#" title="Guide Book">Guide Book</a></li>
+							<li><a href="#" title="Hot Deals">Hot Deals</a></li>
+							<li><a href="#" title="Cruise">Cruise</a></li>
+							<li><a href="#" title="Promotion">Promotion</a></li>
+						</ul>
+					</div><!-- /mainMenu -->
+				</div><!-- /col -->
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /mainMenuContainer -->
+	
+	
+	<!-- MAIN SLIDER ================================================== -->
+	<div class="mainSliderContainer">
+		<ul id="mainSlider">
+			<li>
+				<img src="assets/contents/main-slider-1.png" alt="" />
+				<p class="caption">WHERE TO GO THIS SUMMER?</p>
+			</li>
+			<li>
+				<img src="assets/contents/main-slider-2.png" alt="" />
+				<p class="caption">TRAVEL AROUND THE WORLD FROM $2360.00</p>
+			</li>
+			<li>
+				<img src="assets/contents/main-slider-1.png" alt="" />
+			</li>
+			<li>
+				<img src="assets/contents/main-slider-2.png" alt="" />
+			</li>
+		</ul><!-- /mainSlider -->
+		<div class="mainSliderNav"></div>
+		
+		<!-- BOOKING TABS and FORMS ================================================== -->
+		<div class="bookingTabsContainer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-7 col-sm-9 col-xs-12 bookingTabsCol">
+						<div id="bookingTabs">          
+							<ul class="resp-tabs-list clearfix">
+								<li class="flights"><span>FLIGHTS</span></li>
+								<li class="hotels"><span>HOTELS</span></li>
+								<li class="cars"><span>CARS</span></li>
+								<li class="cruise"><span>CRUISE</span></li>
+							</ul> 
+
+							<div class="resp-tabs-container">                                                        
+								<div>
+									<form id="flightBooking" class="generalForm bookingForm" action="#" method="post" />
+										<div class="row">
+											<div class="col-sm-7">
+												<label>Leaving From <span>*</span></label>
+												<input type="text" name="leaving_from" class="required" />
+											</div>
+											<div class="col-sm-5 datePickContainer">
+												<label>Departing on <span>*</span></label>
+												<input type="text" name="departing_on" class="required datePick" />
+												<img class="datePickImg" alt="date picker" src="assets/images/calendar.png" />
+											</div>
+											<div class="col-sm-7">
+												<label>Going to <span>*</span></label>
+												<input type="text" name="going_to" class="required" />
+											</div>
+											<div class="col-sm-5">
+												<label>Arriving on <span>*</span></label>
+												<input type="text" name="arriving_on" class="required datePick" />
+												<img class="datePickImg" alt="date picker" src="assets/images/calendar.png" />
+											</div>
+											<div class="col-sm-7">
+												<div class="row">
+													<div class="col-sm-4 pRel">
+														<label>Adults <span>*</span></label>
+														<select name="adults" class="customSelectInput required">
+															<option value="00" />00
+															<option value="01" />01
+															<option value="02" />02
+															<option value="03" />03
+															<option value="04" />04
+															<option value="05" />05
+														</select>
+													</div>
+													<div class="col-sm-4 pRel">
+														<label>Children <span>*</span></label>
+														<select name="children" class="customSelectInput required">
+															<option value="00" />00
+															<option value="01" />01
+															<option value="02" />02
+															<option value="03" />03
+															<option value="04" />04
+															<option value="05" />05
+														</select>
+													</div>
+													<div class="col-sm-4 pRel">
+														<label>Senior <span>*</span></label>
+														<select name="senior" class="customSelectInput required">
+															<option value="00" />00
+															<option value="01" />01
+															<option value="02" />02
+															<option value="03" />03
+															<option value="04" />04
+															<option value="05" />05
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-5">
+												<input type="submit" name="submit" value="SEARCH" />
+											</div>
+										</div>
+									</form>
+								</div><!-- /flights -->
+								<div>
+									<form id="hotelBooking" class="generalForm bookingForm" action="#" method="post" />
+										<div class="row">
+											<div class="col-sm-7">
+												<label>Leaving From <span>*</span></label>
+												<input type="text" name="leaving_from" class="required" />
+											</div>
+											<div class="col-sm-5 datePickContainer">
+												<label>Departing on <span>*</span></label>
+												<input type="text" name="departing_on" class="required datePick" />
+												<img class="datePickImg" alt="date picker" src="assets/images/calendar.png" />
+											</div>
+											<div class="col-sm-7">
+												<label>Going to <span>*</span></label>
+												<input type="text" name="going_to" class="required" />
+											</div>
+											<div class="col-sm-5">
+												<label>Arriving on <span>*</span></label>
+												<input type="text" name="arriving_on" class="required datePick" />
+												<img class="datePickImg" alt="date picker" src="assets/images/calendar.png" />
+											</div>
+											<div class="col-sm-7">
+												<div class="row">
+													<div class="col-sm-4 pRel">
+														<label>Adults <span>*</span></label>
+														<select name="adults" class="customSelectInput required">
+															<option value="00" />00
+															<option value="01" />01
+															<option value="02" />02
+															<option value="03" />03
+															<option value="04" />04
+															<option value="05" />05
+														</select>
+													</div>
+													<div class="col-sm-4 pRel">
+														<label>Children <span>*</span></label>
+														<select name="children" class="customSelectInput required">
+															<option value="00" />00
+															<option value="01" />01
+															<option value="02" />02
+															<option value="03" />03
+															<option value="04" />04
+															<option value="05" />05
+														</select>
+													</div>
+													<div class="col-sm-4 pRel">
+														<label>Senior <span>*</span></label>
+														<select name="senior" class="customSelectInput required">
+															<option value="00" />00
+															<option value="01" />01
+															<option value="02" />02
+															<option value="03" />03
+															<option value="04" />04
+															<option value="05" />05
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-5">
+												<input type="submit" name="submit" value="SEARCH" />
+											</div>
+										</div>
+									</form>
+								</div><!-- /hotels -->
+								<div>
+									<form id="carsBooking" class="generalForm bookingForm" action="#" method="post" />
+										<div class="row">
+											<div class="col-sm-7">
+												<label>Leaving From <span>*</span></label>
+												<input type="text" name="leaving_from" class="required" />
+											</div>
+											<div class="col-sm-5 datePickContainer">
+												<label>Departing on <span>*</span></label>
+												<input type="text" name="departing_on" class="required datePick" />
+												<img class="datePickImg" alt="date picker" src="assets/images/calendar.png" />
+											</div>
+											<div class="col-sm-7">
+												<label>Going to <span>*</span></label>
+												<input type="text" name="going_to" class="required" />
+											</div>
+											<div class="col-sm-5">
+												<label>Arriving on <span>*</span></label>
+												<input type="text" name="arriving_on" class="required datePick" />
+												<img class="datePickImg" alt="date picker" src="assets/images/calendar.png" />
+											</div>
+											<div class="col-sm-7">
+												<div class="row">
+													<div class="col-sm-4 pRel">
+														<label>Adults <span>*</span></label>
+														<select name="adults" class="customSelectInput required">
+															<option value="00" />00
+															<option value="01" />01
+															<option value="02" />02
+															<option value="03" />03
+															<option value="04" />04
+															<option value="05" />05
+														</select>
+													</div>
+													<div class="col-sm-4 pRel">
+														<label>Children <span>*</span></label>
+														<select name="children" class="customSelectInput required">
+															<option value="00" />00
+															<option value="01" />01
+															<option value="02" />02
+															<option value="03" />03
+															<option value="04" />04
+															<option value="05" />05
+														</select>
+													</div>
+													<div class="col-sm-4 pRel">
+														<label>Senior <span>*</span></label>
+														<select name="senior" class="customSelectInput required">
+															<option value="00" />00
+															<option value="01" />01
+															<option value="02" />02
+															<option value="03" />03
+															<option value="04" />04
+															<option value="05" />05
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-5">
+												<input type="submit" name="submit" value="SEARCH" />
+											</div>
+										</div>
+									</form>
+								</div><!-- /cars -->
+								<div>
+									<form id="cruiseBooking" class="generalForm bookingForm" action="#" method="post" />
+										<div class="row">
+											<div class="col-sm-7">
+												<label>Leaving From <span>*</span></label>
+												<input type="text" name="leaving_from" class="required" />
+											</div>
+											<div class="col-sm-5 datePickContainer">
+												<label>Departing on <span>*</span></label>
+												<input type="text" name="departing_on" class="required datePick" />
+												<img class="datePickImg" alt="date picker" src="assets/images/calendar.png" />
+											</div>
+											<div class="col-sm-7">
+												<label>Going to <span>*</span></label>
+												<input type="text" name="going_to" class="required" />
+											</div>
+											<div class="col-sm-5">
+												<label>Arriving on <span>*</span></label>
+												<input type="text" name="arriving_on" class="required datePick" />
+												<img class="datePickImg" alt="date picker" src="assets/images/calendar.png" />
+											</div>
+											<div class="col-sm-7">
+												<div class="row">
+													<div class="col-sm-4 pRel">
+														<label>Adults <span>*</span></label>
+														<select name="adults" class="customSelectInput required">
+															<option value="00" />00
+															<option value="01" />01
+															<option value="02" />02
+															<option value="03" />03
+															<option value="04" />04
+															<option value="05" />05
+														</select>
+													</div>
+													<div class="col-sm-4 pRel">
+														<label>Children <span>*</span></label>
+														<select name="children" class="customSelectInput required">
+															<option value="00" />00
+															<option value="01" />01
+															<option value="02" />02
+															<option value="03" />03
+															<option value="04" />04
+															<option value="05" />05
+														</select>
+													</div>
+													<div class="col-sm-4 pRel">
+														<label>Senior <span>*</span></label>
+														<select name="senior" class="customSelectInput required">
+															<option value="00" />00
+															<option value="01" />01
+															<option value="02" />02
+															<option value="03" />03
+															<option value="04" />04
+															<option value="05" />05
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-5">
+												<input type="submit" name="submit" value="SEARCH" />
+											</div>
+										</div>
+									</form>
+								</div><!-- /cruise -->
+							</div>
+						</div><!-- /bookingTabs -->
+					</div><!-- /col -->
+				</div><!-- /row -->
+			</div><!-- /container -->
+		</div><!-- /bookingTabsContainer -->
+		
+		<!-- SHORT OFFERS ================================================== -->
+		<div class="shortOffers">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<a href="#" title="" class="shortOffer clearfix">
+							<div class="title"><h5>MEXICO</h5><h5>NORTH AMERICA</h5></div>
+							<div class="price"><span>From</span><em>$350</em></div>
+						</a><!-- /shortOffer -->
+					</div><!-- /col -->
+					<div class="col-sm-3">
+						<a href="#" title="" class="shortOffer clearfix">
+							<div class="title"><h5>HA LONG BAY</h5><h5>VIETNAM</h5></div>
+							<div class="price"><span>From</span><em>$250</em></div>
+						</a><!-- /shortOffer -->
+					</div><!-- /col -->
+					<div class="col-sm-3">
+						<a href="#" title="" class="shortOffer clearfix">
+							<div class="title"><h5>PATTAYA</h5><h5>THAILAND</h5></div>
+							<div class="price"><span>From</span><em>$600</em></div>
+						</a><!-- /shortOffer -->
+					</div><!-- /col -->
+					<div class="col-sm-3">
+						<a href="#" title="" class="shortOffer clearfix">
+							<div class="title"><h5>BASTIA BEACH</h5><h5>FRANCE</h5></div>
+							<div class="price"><span>From</span><em>$450</em></div>
+						</a><!-- /shortOffer -->
+					</div><!-- /col -->
+				</div><!-- /row -->
+			</div><!-- /container -->
+		</div><!-- /shortOffers -->
+		
+	</div><!-- /mainSliderContainer -->
+	
+	
+	<!-- MAIN CONTENT ================================================== -->
+	<div class="container">
+		
+		<!-- SPECIAL OFFERS ================================================== -->
+		<div class="row">
+			<div class="innerTitle"><h2>SPECIAL <span>OFFER</span></h2></div>		
+			<div id="specialOffers" class="offers">
+				<a href="#" class="item">
+					<img src="assets/contents/sp-offer-1.png" alt="special offer" />
+					<span>KERAMA ISLANDS</span>
+					<div class="priceTag"><em>Fr</em> $350</div>
+				</a>
+				<a href="#" class="item">
+					<img src="assets/contents/sp-offer-2.png" alt="special offer" />
+					<span>MAE SURIN WATERFALL</span>
+					<div class="priceTag"><em>Fr</em> $350</div>
+				</a>
+				<a href="#" class="item">
+					<img src="assets/contents/sp-offer-3.png" alt="special offer" />
+					<span>ABERYSTWYTH BEACH</span>
+					<div class="priceTag"><em>Fr</em> $350</div>
+				</a>
+				<a href="#" class="item">
+					<img src="assets/contents/sp-offer-1.png" alt="special offer" />
+					<span>KERAMA ISLANDS</span>
+					<div class="priceTag"><em>Fr</em> $350</div>
+				</a>
+				<a href="#" class="item">
+					<img src="assets/contents/sp-offer-2.png" alt="special offer" />
+					<span>MAE SURIN WATERFALL</span>
+					<div class="priceTag"><em>Fr</em> $350</div>
+				</a>
+				<a href="#" class="item">
+					<img src="assets/contents/sp-offer-3.png" alt="special offer" />
+					<span>ABERYSTWYTH BEACH</span>
+					<div class="priceTag"><em>Fr</em> $350</div>
+				</a>
+			</div><!-- /specialOffers -->
+		</div><!-- /row -->
+		
+		
+		<div class="row">
+			<div class="col-sm-8">
+				<!-- FEATURED OFFERS ================================================== -->
+				<div class="row">
+					<div class="innerTitle"><h2>FEATURED <span>OFFER</span></h2></div>	
+					<div class="featuredOffers offers">
+						<div class="col-sm-4">
+							<a href="#" class="item">
+								<img src="assets/contents/ft-offer-1.png" alt="special offer" />
+								<span>MALAWI NATIONAL PARK</span>
+								<div class="priceTag"><em>Fr</em> $350</div>
+							</a>
+						</div><!-- /col -->
+						<div class="col-sm-4">
+							<a href="#" class="item">
+								<img src="assets/contents/ft-offer-2.png" alt="special offer" />
+								<span>MALAWI NATIONAL PARK</span>
+								<div class="priceTag"><em>Fr</em> $350</div>
+							</a>
+						</div><!-- /col -->
+						<div class="col-sm-4">
+							<a href="#" class="item">
+								<img src="assets/contents/ft-offer-3.png" alt="special offer" />
+								<span>MALAWI NATIONAL PARK</span>
+								<div class="priceTag"><em>Fr</em> $350</div>
+							</a>
+						</div><!-- /col -->
+						<div class="col-sm-4">
+							<a href="#" class="item">
+								<img src="assets/contents/ft-offer-4.png" alt="special offer" />
+								<span>MALAWI NATIONAL PARK</span>
+								<div class="priceTag"><em>Fr</em> $350</div>
+							</a>
+						</div><!-- /col -->
+						<div class="col-sm-4">
+							<a href="#" class="item">
+								<img src="assets/contents/ft-offer-5.png" alt="special offer" />
+								<span>MALAWI NATIONAL PARK</span>
+								<div class="priceTag"><em>Fr</em> $350</div>
+							</a>
+						</div><!-- /col -->
+						<div class="col-sm-4">
+							<a href="#" class="item">
+								<img src="assets/contents/ft-offer-6.png" alt="special offer" />
+								<span>MALAWI NATIONAL PARK</span>
+								<div class="priceTag"><em>Fr</em> $350</div>
+							</a>
+						</div><!-- /col -->
+					</div><!-- /featuredOffers -->
+				</div><!-- /row -->
+			</div><!-- /col -->
+			<div class="col-sm-4">
+				<!-- LATEST NEWS ================================================== -->
+				<div class="innerTitle"><h2>LATEST <span>NEWS</span></h2></div>
+				<p class="black">Lorem ipsum dolor ipsum dolor.</p>
+				<div class="newsList">
+					<ul>
+						<li><a href="#" title="">Lorem ipsum dolor ipsum dolor. Lorem ipsum dolor ipsum dolor. Lorem ipsum dolor ipsum dolor.</a></li>
+						<li><a href="#" title="">Lorem ipsum dolor ipsum dolor.</a></li>
+						<li><a href="#" title="">Lorem ipsum dolor ipsum dolor. Lorem ipsum dolor ipsum dolor. Lorem ipsum dolor ipsum dolor.</a></li>
+					</ul>
+				</div><!-- /newsList -->
+				<!-- BOTTOM SLIDER ================================================== -->
+				<div class="bottomSliderContainer">
+					<ul id="bottomSlider">
+						<li>
+							<img src="assets/contents/bottom-slider-1.png" alt="" />
+							<p class="caption">VISIT TO JAPEN IN THIS SUMMER</p>
+						</li>
+						<li>
+							<img src="assets/contents/bottom-slider-1.png" alt="" />
+							<p class="caption">VISIT TO JAPEN IN THIS SUMMER</p>
+						</li>
+					</ul><!-- /bottomSlider -->
+					<div class="bottomSliderNav"></div>
+				</div><!-- /bottomSliderContainer -->
+			</div><!-- /col -->
+		</div><!-- /row -->
+		
+	</div><!-- /container -->
+	
+	
+	<!-- FOOTER ================================================== -->
+	<div id="footer">
+		<div class="footerTop">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3"><a class="logoBottom" href="#" title=""><img src="assets/images/logo-bottom.png" alt="logo" /></a></div>
+					<div class="col-sm-3">
+						<h5>Contact <span>Info</span></h5>
+						<p>No. 08, Nguyen Trai, Hanoi , Vietnam</p>
+						<p>Call Us: <a href="tel:08419001008" title="Call Us">(084) 1900 1008</a></p>
+						<p>Email: <a href="mailto:michael@leebros.us" title="Email us">michael@leebros.us</a></p>
+					</div>
+					<div class="col-sm-3">
+						<h5>Customer <span>Support</span></h5>
+						<div class="footerLinkList">
+							<ul>
+								<li><a href="#" title="FAQ">FAQ</a></li>
+								<li><a href="#" title="Payment Option">Payment Option</a></li>
+								<li><a href="#" title="Booking Tips">Booking Tips</a></li>
+								<li><a href="#" title="Infomation">Infomation</a></li>
+							</ul>
+						</div><!-- /footerLinkList -->
+					</div>
+					<div class="col-sm-3">
+						<h5>Get Our <span>Newsletter</span></h5>
+						<p>Lorem ipsum dolor ipsum dolor.</p>
+						<form id="newsletter" class="clearfix" action="#" method="post" />
+							<input type="text" name="email" class="required email" value="Your Email..." />
+							<input type="submit" name="send" value="SIGNUP" />
+						</form>
+						<div class="loader"></div>
+					</div>
+				</div><!-- /row -->
+			</div><!-- /container -->
+		</div><!-- /footerTop -->
+		<div class="footerBottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="footerMenu clearfix">
+							<ul>
+								<li><a href="#" title="About Us">About Us</a></li>
+								<li><a href="#" title="News">News</a></li>
+								<li><a href="#" title="Service">Service</a></li>
+								<li><a href="#" title="Recruiment">Recruiment</a></li>
+								<li><a href="#" title="Media">Media</a></li>
+								<li><a href="#" title="Support">Support</a></li>
+							</ul>
+						</div><!-- /footerMenu -->
+					</div>
+					<div class="col-sm-6">
+						<div class="copy">Copyright © 2013. Designed by <span>Michael Lee</span>. All rights reseved.</div><!-- /copy -->
+					</div>
+				</div><!-- /row -->
+			</div><!-- /container -->
+		</div><!-- /footerBottom -->
+	</div><!-- /footer -->
+	
+	
+	<!-- modal content -->
+	<div id="loginModal">
+		<h6>LOGIN FORM</h6>
+		<form id="loginForm" class="generalForm" />
+			<input class="loginName required" type="text" value="Username" name="loginName" />
+			<input class="loginPass required" type="password" value="Password" name="loginPass" />
+			<div class="loginInner clearfix">
+				<input type="submit" value="LOG IN" />
+				<input type="checkbox" checked="" class="required" /><span>Remember Me?</span>
+			</div>
+		</form>
+		<a href="#" title="Lost Your Pass Word?">Lost Your Pass Word?</a>
+		<div class="loaderImg"></div>
+	</div>
+		
+		
+	
+
+	<!-- JAVASRICPTS
+	================================================== -->
+	<script src="assets/scripts/jquery-1.8.2.min.js"></script>
+	<script src="assets/scripts/bootstrap.min.js"></script>
+	<script src="assets/scripts/respond.min.js"></script>
+	<script src="assets/scripts/jquery.easing.1.3.js"></script>
+	<script src="assets/scripts/jquery.touchSwipe.min.js"></script>
+	<script src="assets/scripts/responsiveslides.min.js"></script>
+	<script src="assets/scripts/jquery-tinyNav.js"></script>
+	<script src="assets/scripts/easyResponsiveTabs.js"></script>
+	<script src="assets/scripts/jquery-validation.js"></script>
+	<script src="assets/scripts/jquery.datepick.min.js"></script>
+	<script src="assets/scripts/jquery.customSelect.min.js"></script>
+	<script src="assets/scripts/owl.carousel.min.js"></script>
+	<script src="assets/scripts/jquery.simplemodal.js"></script>
+	<script src="assets/scripts/jRating.jquery.js"></script>
+	<script src="assets/scripts/jquery.screwdefaultbuttonsV2.min.js"></script>
+	<script src="assets/scripts/global.js"></script>
+
+</body>
+</html>
